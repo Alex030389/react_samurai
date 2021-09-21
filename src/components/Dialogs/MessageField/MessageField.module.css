@@ -1,0 +1,18 @@
+.messageField {
+  display: flex;
+}
+
+.messageField__textarea {
+  resize: vertical;
+  flex-grow: 1;
+  height: auto;
+  margin-right: 20px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.messageField__btn {
+  flex-basis: 150px;
+  height: 30px;
+  align-self: flex-end;
+}

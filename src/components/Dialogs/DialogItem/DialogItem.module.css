@@ -1,0 +1,29 @@
+.dialogItem {
+  position: relative;
+  padding-left: 24px;
+}
+
+.dialogItem::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width:  6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #d2d2d2;
+}
+.dialogItem_online::before {
+  background-color: #67c8d5;
+  border: 1px solid #67c8d5;
+}
+
+.dialogItem__name {
+  font-size: 20px;
+  color: #67a8d9;
+  text-decoration: none;
+}
+.dialogItem__name_active {
+  color: #0d5e8d;
+}

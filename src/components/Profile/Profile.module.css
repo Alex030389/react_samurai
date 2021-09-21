@@ -1,0 +1,32 @@
+.profile {
+
+}
+
+.profile__wrapImg {
+  width: 100%;
+  overflow: hidden;
+  max-height: 330px;
+  margin-bottom: 30px;
+}
+
+.profile__img {
+  width: 100%;
+}
+
+/*///////////////////////////////////////// user*/
+/*
+.user {
+  display: flex;
+}
+
+.user__wrapimg {
+  flex-basis: 220px;
+}
+
+.user__img {
+  font-size: 14px;
+}
+
+.user__text {
+
+}*/

@@ -1,0 +1,15 @@
+.nav {
+}
+
+.nav__item {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav__item._active {
+  color: red;
+}

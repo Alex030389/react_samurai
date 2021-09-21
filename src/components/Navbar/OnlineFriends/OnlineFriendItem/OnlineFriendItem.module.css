@@ -1,0 +1,16 @@
+.onlineFriendItem {
+  margin: 0 8px 16px;
+  width: calc(25% - 16px);
+}
+
+.onlineFriendsItem__wrapAva {
+  margin-bottom: 12px;
+}
+
+.onlineFriendsItem__ava {
+
+}
+
+.onlineFriendsItem__name {
+  text-align: center;
+}

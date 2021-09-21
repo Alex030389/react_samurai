@@ -1,0 +1,47 @@
+.post:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.post__content {
+  display: flex;
+}
+
+.post__wrapAva {
+  width: 120px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.post__ava {
+  width: 100%;
+}
+
+.post__text {
+
+}
+
+.post__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.post__like {
+  margin-right: 15px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: darkgrey;
+}
+
+.post__like._active {
+  background-color: crimson;
+}
+
+.post__likeCount {
+  font-weight: 500;
+  font-size: 15px;
+}

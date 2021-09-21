@@ -1,0 +1,46 @@
+.myPosts {
+
+}
+
+.myPosts__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.myPosts__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.myPosts__textarea {
+  width: auto;
+  margin-bottom: 20px;
+  resize: none;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.myPosts__btn {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  border: none;
+  background-color: coral;
+  color: #fff;
+  padding:  10px 15px;
+  font-size: 18px;
+  min-height: 50px;
+  text-align: center;
+}
+
+.myPosts__list {
+
+}
+
+.myPosts__item {
+
+}

@@ -1,0 +1,36 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: brown;
+  color: #fff;
+}
+
+/*////////////////////////////////////// main */
+.main {
+  display: flex;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.main__navbar {
+  background-color: bisque;
+  width: 25%;
+  padding: 20px;
+}
+
+.main__content {
+  padding: 20px;
+  background-color: aliceblue;
+  width: 75%;
+}
