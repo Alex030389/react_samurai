@@ -7,12 +7,13 @@ import { Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 
 const App = (props) => {
+  // debugger;
   return (
     <div className="app-wrapper">
       <Header />
       <main className="main">
         <div className="main__navbar">
-          <Navbar onlineFriends={props.state.onlineFriends} />
+          <Navbar />
         </div>
         <div className="main__content">
           <Route exact path={"/"}
