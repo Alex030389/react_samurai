@@ -36,7 +36,7 @@ let initialState = {
     },
   ],
 
-  newMessageText: '',
+  newMessageText: 'text',
 };
 
 const dialogsReducer = (state = initialState, action) => {

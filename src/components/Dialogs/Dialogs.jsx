@@ -4,19 +4,21 @@ import Message from "./Message/Message";
 import MessageField from "./MessageField/MessageField";
 
 const Dialogs = (props) => {
+  // debugger;
   return (
     <div className={c.dialogs}>
       <div className={c.dialogs__list}>
-        {props.stateDialogsPage.dialogs.map((el) => <DialogItem id={el.id} name={el.name}/>)}
+        {props.stateDialogs.map((el) => <DialogItem id={el.id} name={el.name}/>)}
       </div>
 
       <div className={c.dialogs__messagesList}>
-        {props.stateDialogsPage.messages.map((el) => <Message id={el.id} message={el.message}/>)}
+        {props.stateMessages.map((el) => <Message id={el.id} message={el.message}/>)}
 
         <MessageField
           className={c.dialogs__messageField}
-          newMessageText={props.stateDialogsPage.newMessageText}
-          dispatch={props.dispatch}
+          newMessageText={props.newMessageText}
+          messageChange={props.messageChange}
+          addMessage={props.addMessage}
         />
       </div>
     </div>
