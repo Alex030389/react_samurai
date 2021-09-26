@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import OnlineFriends from "./OnlineFriends/OnlineFriends";
 
 const Navbar = (props) => {
-  let state = props.store.getState();
+  // let state = props.store.getState();
 
   return (
     <nav className={c.nav}>
@@ -13,7 +13,7 @@ const Navbar = (props) => {
       <NavLink className={c.nav__item} activeClassName={c._active} to="/music">Music</NavLink>
       <NavLink className={c.nav__item} activeClassName={c._active} to="/settings">Settings</NavLink>
 
-      <OnlineFriends onlineFriends={state.sidebar.onlineFriends} />
+      {/*<OnlineFriends onlineFriends={state.sidebar.onlineFriends} />*/}
     </nav>
   );
 };
