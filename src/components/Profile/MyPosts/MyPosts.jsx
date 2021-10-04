@@ -22,7 +22,7 @@ const MyPosts = (props) => {
         <button className={`${c.myPosts__btn} btn`} onClick={ onAddPost }>Add post</button>
       </div>
       <div className={c.myPosts__list}>
-        {props.posts.map((el) => <Post id={el.id} text={el.message} count={el.likesCount} like={el.like} />)}
+        {props.posts.map((el) => <Post key={el.id} id={el.id} text={el.message} count={el.likesCount} like={el.like} />)}
       </div>
     </div>
   );

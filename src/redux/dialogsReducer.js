@@ -3,53 +3,37 @@ const UPDATE_MESSAGE = 'UPDATE_MESSAGE';
 
 let initialState = {
   dialogs: [
-    {
-      id: 1,
-      name: 'Alex'
-    },
-    {
-      id: 2,
-      name: 'Andrew'
-    },
-    {
-      id: 3,
-      name: 'Olga'
-    },
-    {
-      id: 4,
-      name: 'Vadim'
-    },
-    {
-      id: 5,
-      name: 'Sasha'
-    },
+    {id: 1, name: 'Alex'},
+    {id: 2, name: 'Andrew'},
+    {id: 3, name: 'Olga'},
+    {id: 4, name: 'Vadim'},
+    {id: 5, name: 'Sasha'},
   ],
 
   messages: [
-    {
-      id: 1,
-      message: 'Hi'
-    },
-    {
-      id: 2,
-      message: 'Hi2'
-    },
+    {id: 1, message: 'Hi'},
+    {id: 2, message: 'Hi2'},
   ],
 
-  newMessageText: 'text',
+  newMessageText: '',
 };
 
 const dialogsReducer = (state = initialState, action) => {
-  switch(action.type) {
+  switch (action.type) {
     case UPDATE_MESSAGE:
-      state.newMessageText = action.text;
-      return state;
+      return {
+        ...state,
+        newMessageText: action.text
+      };
     case ADD_MESSAGE:
-      state.messages.push(
-        {id: ++state.messages.length, message: state.newMessageText,}
-      );
-      state.newMessageText = '';
-      return state;
+      return {
+        ...state,
+        messages: [
+          ...state.messages,
+          {id: 3, message: `${state.newMessageText}`}
+        ],
+        newMessageText: '',
+      };
     default:
       return state;
   }

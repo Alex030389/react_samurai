@@ -3,7 +3,6 @@ import dialogsReducer from "./dialogsReducer";
 import sidebarReducer from "./sidebarReducer";
 
 const store = {
-
   _state: {
     profilePage: {
       posts: [{

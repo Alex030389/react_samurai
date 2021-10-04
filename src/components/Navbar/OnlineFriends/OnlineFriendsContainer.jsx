@@ -1,17 +1,12 @@
 import OnlineFriends from "./OnlineFriends";
+import {connect} from "react-redux";
 
-const OnlineFriendsContainer = () => {
-  // return <StoreContext.Consumer>
-  //   {
-  //     (store) => {
-  //       let state = store.getState();
-  //
-  //       return <OnlineFriends
-  //         onlineFriends={state.sidebar.onlineFriends}
-  //       />
-  //     }
-  //   }
-  // </StoreContext.Consumer>
+const mapStateToProps = (state) => {
+  return {
+    onlineFriends: state.sidebar.onlineFriends
+  };
 };
+
+const OnlineFriendsContainer = connect(mapStateToProps)(OnlineFriends);
 
 export default OnlineFriendsContainer;
