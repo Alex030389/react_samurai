@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import {Route} from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import UsersContainer from "./components/Users/UsersContainer";
 
 const App = () => {
   // debugger;
@@ -19,6 +20,7 @@ const App = () => {
         <div className="main__content">
           <Route exact path={"/"} render={() => <Profile/>}/>
           <Route path={'/dialogs'} render={() => <DialogsContainer/>}/>
+          <Route path={'/users'} render={() => <UsersContainer/>}/>
         </div>
       </main>
       <Footer/>
